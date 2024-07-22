@@ -1,5 +1,7 @@
 <?php
 
+namespace Polynds\ThinkphpSentry\Command;
+
 use Symfony\Component\Console\Input\InputArgument;
 use think\console\Command;
 

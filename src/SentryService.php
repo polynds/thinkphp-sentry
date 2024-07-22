@@ -1,6 +1,6 @@
 <?php
 
-namespace think\trace;
+namespace Polynds\ThinkphpSentry;
 
 use think\Service as BaseService;
 

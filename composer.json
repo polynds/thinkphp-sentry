@@ -1,6 +1,6 @@
 {
     "name": "polynds/thinkphp-sentry",
-    "description": "A Sentry access plugin written for thinpap.",
+    "description": "A Sentry access plugin written for thinkphp.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -12,7 +12,10 @@
     "require": {
         "php": "^7.2|^8.0",
         "topthink/framework": "^6.0|^8.0",
-        "sentry/sentry": "dev-master"
+        "topthink/think-filesystem": "v2.0.1",
+        "sentry/sentry": "dev-master",
+        "symfony/psr-http-message-bridge": "^1.0 | ^2.0 | ^6.0 | ^7.0",
+        "nyholm/psr7": "^1.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
@@ -30,7 +33,7 @@
                 "Polynds\\ThinkphpSentry\\SentryService"
             ],
             "config":{
-                "sentry": "src/config.php"
+                "sentry": "config/sentry.php"
             }
         }
     },    
